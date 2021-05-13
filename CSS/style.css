@@ -1,14 +1,23 @@
-#container{
+.container{
 
     margin: 0 auto;
-    width: 0%;
+    width: 50%;
     padding: 10px;
 
 
 }
 
+label{ 
+
+    padding-right: 10px;
+
+
+
+}
+
 html{ background-color:grey;}
-button{ margin: 10px;
+#buttons{ margin: 20px;
+    display: flex;
 }
     
 
