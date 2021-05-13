@@ -12,20 +12,19 @@
 
 
 
-        <form>
+        <form id="form1" onsubmit="return validateForm()" method="post">
 
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="John"><br>
+            First name: <input type="text" id="fname" name="fname" placeholder="John"><br>
 
-            <form>
+            
                 <label for="fname">Last name:</label><br>
                 <input type="text" id="lname" name="lname" placeholder="Doe"><br>
 
-                <form>
+                
                     <label for="fname">Address:</label><br>
                     <input type="text" id="Address" name="Address" placeholder="123 Elm Street"><br>
 
-                    <form>
+                    
                         <label for="fname">City:</label><br>
                         <input type="text" id="city" name="city" placeholder="Crofton"><br>
                         <!-- state drop down -->
@@ -87,11 +86,11 @@
                         </select>
                         <!-- numbers  -->
 
-                        <form>
+                        
                             <label for="zip">Zip Code:</label><br>
                             <input type="text" id="zip" name="zip" placeholder="12345"> <br>
 
-                            <form>
+                            
                                 <label for="phone">Phone number:</label><br><br>
                                 <input type="tel" id="phone" name="phone" placeholder="5555555555"
                                     pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
@@ -99,24 +98,26 @@
 
                             <!-- email -->
 
-                            <form>
+                            
                                 <label for="email">Email:</label>
                                 <input type="email" id="email" name="email" placeholder="johndoe@hotmail.com"><br>
 
 
-                                <form>
+                                
                                     <label for="email">Confirm Email:</label>
-                                    <input type="email" id="email" name="email" placeholder="johndoe@hotmail.com" ><br>
+                                    <input type="email" id="emailConfirm" name="email" placeholder="johndoe@hotmail.com" ><br>
 
 
 
 
                                     <div id="buttons">
                                         <!-- submit and reset button -->
-                                        <button type="submit">Submit</button>
+                                        <input type="submit" value="Submit">
 
-                                        <button type="resetbtn">Reset</button>
+                                        <input type="button" onclick="resetForm()" value="Reset">
                                     </div>
+
+                                </form>
     </div>
 
 
