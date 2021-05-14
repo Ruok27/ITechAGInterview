@@ -1,3 +1,18 @@
+function submitForm(){
+
+if (document.getElementById("emailForm").value != document.getElementById("emailConfirmForm").value){
+
+
+  alert("Emails do not match");
+}
+
+}
+
+
+
+
+
+
 function resetForm() {
   document.getElementById("form1").reset();
 }
